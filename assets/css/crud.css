@@ -1,3 +1,6 @@
+body{
+    background-color: none;
+}
 #content {
     margin-top: 5%;   
     height: 70vh; 

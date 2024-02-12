@@ -1,8 +1,8 @@
-
 @keyframes fade {
-    0%{opacity:0;}
-    100%{opacity:1};
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -12,28 +12,47 @@ body {
     animation: fade 2s;
 }
 
-.content{
-    width: 100%;
-    height: 90vh;
+/* HEADER */
+.header {
+    justify-content: flex-start; /* Alignement horizontal à gauche */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white; /* Couleur du texte */
 }
-.content-text{
-    margin-top: 15%;
+.header .col-md-2{
+    display: inline;
+}
+.user-icon{
+    height: 5vh;
+    width: 20%;
+    float: left;
+}
+.user-icon img {
+    width: 30px; /* Taille de l'icône utilisateur */
+    height: 30px;
+}
+
+.user-info p {
+    margin: 0;
+    font-weight: bold;
+}
+/* HEADER */
+
+.content {
+    width: 100%;
+    height: calc(100vh - 40px); /* Ajustement de la hauteur en tenant compte du header */
+    padding-top: 40px; /* Ajustement pour éviter que le contenu ne soit caché sous le header */
+}
+
+.content-text {
     text-align: center;
+    margin-top: 15%;
     color: azure;
 }
-.content-text h1{
+
+.content-text h1 {
     font-size: 100px;
     font-weight: 800;
 }
-  img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    mix-blend-mode: multiply; /* Permet de fusionner l'image avec l'arrière-plan */
-    opacity: 0.5; /* Réglage de l'opacité de l'image */
-  }
 
-  

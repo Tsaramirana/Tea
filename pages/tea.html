@@ -7,11 +7,28 @@
     <link rel="stylesheet" href="../assets/css/sidebar.css">
     <link rel="stylesheet" href="../assets/css/crud.css">
     <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
     <title>Tea-rapy</title>
 </head>
 <body>
     <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="col-md-9">
+                <button class="open-btn" id="openBtn">&#9776;</button>
+            </div>
+            <div class="col-md-3">
+                <div class="user-icon">
+                    <img src="../assets/images/user-icon.png" alt="User Icon">
+                </div>
+                <div class="user-info">
+                    <p>Nom de l'utilisateur</p>
+                </div>
+            </div>
+        </header>
+        <!-- HEADER -->
+
         <!-- SIDEBAR -->
         <div class="sidebar" id="sidebar">
             <button class="close-btn" id="closeBtn">&times;</button>
@@ -27,7 +44,6 @@
         </div>    
         <!-- SIDEBAR -->
         <div class="row">
-            <button class="open-btn" id="openBtn">&#9776;</button>
             <h1>Gestion des variétés de thé</h1>
         </div>
         <div class="row" id="content">
@@ -121,5 +137,6 @@
     </div>
     <script src="../assets/js/sidebar.js"></script> 
     <script src="../assets/js/pagination.js"></script>
+    <script src="../assets/js/userInfo.js"></script>
 </body>
 </html>
