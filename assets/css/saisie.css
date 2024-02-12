@@ -1,0 +1,33 @@
+@keyframes fade {
+    0% { opacity: 0; width: 0%; overflow: hidden;}
+    100% { opacity: 1; }
+}
+body{
+    background-image: url("../images/back4.jpg");
+    background-size: cover;
+}
+#formulaire {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    padding:15px;
+    box-shadow: 0 15px 25px rgba(100, 97, 97, 0.6);
+    transform: translate(-50%, -50%); /* Centrage horizontal et vertical */
+    background: 
+	rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(26, 110, 81, 0.37);
+	backdrop-filter:blur (20px);
+	-webkit-backdrop-filter:blur(20px);
+    animation: fade 2000ms;
+}
+
+#formulaire .col-md-12{
+    position: relative;
+    left: 20%;
+}
+
+footer{
+    margin-top: 45%;
+}
+

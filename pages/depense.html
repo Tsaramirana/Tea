@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/saisie.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <title>Tea-rapy: Saisie des dépenses</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- SIDEBAR -->
+        <div class="sidebar" id="sidebar">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <h1>Tea-rapy</h1>
+            <ul>
+                <li><a href="acceuilUser.html">Accueil</a></li>
+                <li><a href="#">Déconnexion</a></li>
+            </ul>
+        </div>
+        <!-- SIDEBAR -->
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="col-md-10">
+                <button class="open-btn" id="openBtn">&#9776;</button>
+            </div>
+            <div class="col-md-2">
+                <div class="user-icon">
+                    <img src="../assets/images/user-icon.png" alt="User Icon">
+                </div>
+                <div class="user-info">
+                    <p>Nom de l'utilisateur</p>
+                </div>
+            </div>
+        </header>    
+        <!-- HEADER -->
+
+        <!-- CONTENT -->
+        <div class="row" id="formulaire">
+            <div class="col-md-12">
+                <h1>Dépenses</h1>
+                <form class="form-horizontal center-block">
+                    <div class="form-group">
+                        <!-- <label for="inputEmail3" class="col-sm-2 control-label">Email</label> -->
+                        <div class="col-sm-8">
+                        <p>Date</p>
+                        <input type="date" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
+                        <div class="col-sm-8">
+                        <p>Catégorie</p>
+                        <select class="form-control" name="idCategorie">
+                            <option value="">Categorie 1</option>
+                            <option value="">Categorie 2</option>
+                            <option value="">Categorie 3</option>
+                        </select>                
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="inputEmail3" class="col-sm-2 control-label">Email</label> -->
+                        <div class="col-sm-8">
+                        <p>Montant</p>
+                        <input type="number" class="form-control" id="inputEmail3" placeholder="Montant">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-8">
+                        <button type="submit" class="btn btn-default">Se connecter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- CONTENT -->
+        
+        <!-- FOOTER -->
+        <footer>ETU002369 - ETU002405 - ETU002601</footer>
+        <!-- FOOTER -->
+
+    <script src="../assets/js/sidebar.js"></script>
+    </div>
+</body>
+</html>
