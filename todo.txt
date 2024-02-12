@@ -1,0 +1,78 @@
+beforeLog.php
+    Affichage
+        btn 2 => mode = admin ou user 
+
+Login
+    Affichage
+        formulaire : email, mdp, btn
+        if (mode=admin) input hidden value admin
+        else ...
+    Metier
+        script:
+            Admin (email,sha1(mdp))
+        fonction php :
+            personne authetification (email,mdp,status)
+    Integration
+        traitementLoginAdmin :
+            get info
+            if (null)=> retour aff avec erreur
+            else => acceuil.php
+
+
+AcceuilAdmin
+    Affichage 
+        sideBar : crud tea (variete)
+                  crud parcel
+                  crud cueilleur
+                  crud depense
+                  crud salaire
+    Metier
+        fonction php :
+                crud pour tea
+                          parcel
+                          cueilleur
+                          depense
+    Integration
+        traitementTea/parcel/cueilleur/depense
+        mode: c / r / u / d 
+
+AcceuilUser
+    -saisi cueillette
+    Affichage
+        input date
+        select/option : cueilleur
+        select/option : parcel
+        input number poid cueilli
+    Metier
+        php
+            insertPicking
+        js
+            ValidWeight
+                .php
+                    .view qtyProducedUntilNow
+                    .view qtytakenUntilNow
+                    .view canBeTaken
+                    .select from that last
+    Integration
+       if (canBeTaken==false) retour
+       else insert
+
+
+    -saisi depense
+    Affichage
+        input date
+        select/option categSpent
+        input number montant
+    Metier
+        php
+            insertSpent
+            getAllCategSpent
+    Integration
+        traitement : insert
+
+
+
+    -page de resultat
+    Affichage
+        diagramme:
+            
