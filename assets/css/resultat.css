@@ -13,13 +13,38 @@
 #statistics{
     margin-top: 2%;
 }
-#statistics-simple #st1{
-    background-color: #416551;
-    color: azure;
+#statistics-simple .row{
     padding: 5px 15px;
     border-radius: 15px;
     height: 20vh;
+    box-shadow: 0 25px 35px 5px rgba(60, 60, 60, 0.5);
+    margin-top: 5%;
+}
+#statistics-simple #st1{
+    background-color: #416551;
+    color: azure;
 }
 footer{
     margin-top: 4%;
+}
+
+/* #statistics-finance{
+    margin-top: 5%;
+} */
+#statistics-finance .col-md-3{
+    height: 10vh;
+    padding: 5px 15px;
+    border-radius: 15px;
+    height: 20vh;
+    box-shadow: 0 25px 35px 5px rgba(60, 60, 60, 0.5);
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#depense{
+    background-color: #779584;
+}
+#benefice{
+    background-color: #416551;
+    color: aliceblue;
 }
