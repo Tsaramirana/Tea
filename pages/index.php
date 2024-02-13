@@ -1,0 +1,60 @@
+<?php ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea rapy</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <header>
+            <h2 class="logo">logo</h2>
+            <nav class="navigation">
+                <a href="#" class="active">Accueil</a>
+                <a href="">Contact</a>
+                <a href="">A propos</a>
+            </nav>  
+            <a href="login.php?mode=1">Se connecter en tant qu'administrateur</a>  
+        </header>
+        <!-- HEADER -->
+
+        <!-- SECTION 1 -->
+        <div class="row" id="section1">
+            <div class="row">
+                <div class="col-md-6" id="text">
+                    <div class="row" id="text-content">
+                        <h1>Tea rapy</h1>
+                        <p>Votre fournisseur de thé en tout temps</p>
+                        <p><a href="login.php?mode=0" class="btn btn-default">Se connecter</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6" id="images">
+                    <div class="row">
+                        <!-- <div class="col-md-12" id="brush-stroke"><img src="../assets/images/coup-pinceau-vert-fond-blanc-removebg-preview.png" alt="" width="800vw"></div> -->
+                        <div class="col-md-12" id="tea-image"><img src="../assets/images/tea-pot.png   " alt="" width="800vw"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row" id="falling-leaves">..</div> -->
+        </div>
+        <!-- SECTION 1 -->
+
+        <!-- SECTION 2 -->
+        <div class="row" id="section2">
+        </div>
+        <!-- SECTION 2 -->
+
+        <!-- FOOTER-->
+        <footer>ETU002369 - ETU002405 - ETU002601</footer>
+        <!-- FOOTER -->
+
+    </div>
+</body>
+</html>

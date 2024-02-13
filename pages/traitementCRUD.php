@@ -32,12 +32,13 @@
             pickerUpdate($_GET['id'], $newPicker);
         }elseif ($_GET['tool']=="categSpent") {
             $newCategSpent["name"] = $_GET['name'];
-            pickerUpdate($_GET['id'], $newCategSpent);
+            categSpentUpdate($_GET['id'], $newCategSpent);
         }elseif ($_GET['tool']=="spent") {
             $newSpent['idcategSpent']=$_GET['idcategSpent'];
             $newSpent['spent']=$_GET['spent'];
             $newSpent['theDate']=$_GET['theDate'];
             spentUpdate($_GET['id'], $newSpent);
+            echo "ok";
         }
     }elseif ($_GET['action']=="d") { //delete
         if ($_GET['tool']=="tea") {
@@ -52,9 +53,11 @@
             delete("spent", $_GET['id']);
         }
     }
-    if ($_GET['tool']=="spent"||$_GET['tool']=="saisi_cueillette") {
-        header ('Location:AcceuilUser.php');
+    if ($_GET['tool']=="saisi_cueillette") {
+       header ('Location:AcceuilUser.php?tool='.$_GET['tool'].'&action=a');
+    }elseif($_GET['tool']=="spent"){
+       header ('Location:depense.php?tool='.$_GET['tool'].'&action=a');
     }else{
-        header ('Location:AcceuilAdmin.php');
+       header ('Location:AcceuilAdmin.php?tool='.$_GET['tool'].'&action=a');
     }
 ?>

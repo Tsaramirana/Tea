@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Poppins;
+    src: url("../font/Poppins-Regular.ttf");
+}
+
+*{
+    font-family: Poppins;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(216, 216, 216, 0.85);
+    height: 10vh;
+    width: 100%;
+}

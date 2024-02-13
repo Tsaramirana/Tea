@@ -1,0 +1,22 @@
+body{
+    background-color: none;
+}
+#content {
+    margin-top: 5%;   
+    height: 70vh; 
+}
+
+#formulaire {
+    box-shadow: 0 15px 15px rgba(78, 98, 82, 0.2); /* Correction de l'ombre portée */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Correction de la bordure */
+    padding-top: 15px;
+    border-radius: 5px;
+}
+
+#table{
+    box-shadow: 0 15px 15px rgba(78, 98, 82, 0.2); /* Correction de l'ombre portée */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Correction de la bordure */
+    padding-top: 15px;
+    border-radius: 5px;   
+}
+

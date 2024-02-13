@@ -25,7 +25,7 @@ include "../inc/crudFunctions.php";
         for ($i=0; $i < count($poidsRestant) ; $i++) { ?>
             <tr>
                 <td><?php echo $poidsRestant[$i]['parcel']  ?></td>
-                <td><?php echo $poidsRestant[$i]['restant']  ?></td>
+                <td><?php echo $poidsRestant[$i]['available']  ?></td>
             </tr>
         <?php } ?>    
     </table>

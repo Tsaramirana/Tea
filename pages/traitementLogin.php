@@ -8,11 +8,11 @@
         session_start ();
         $_SESSION ['user'] = $user;
         if ($status==0) {
-            header ('Location:AcceuilAdmin.php');
+            header ('Location:AcceuilAdmin.php?tool=tea&action=a');
         }else{
-            header ('Location:AcceuilUser.php');
+            header ('Location:AcceuilUser.php?action=a');
         }
     }else {
-        header ("Location:formulaire.php?erreur=verifiez vos informations&mode=".$status);
+        header ("Location:login.php?erreur=verifiez vos informations&mode=".$status);
     }
 ?>

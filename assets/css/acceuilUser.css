@@ -1,0 +1,57 @@
+@keyframes fade {
+    0% { opacity: 0; width: 0%; overflow: hidden;}
+    100% { opacity: 1; }
+}
+
+body{
+    overflow: hidden;
+}
+#picker-image{
+    position: absolute;
+    background-image: url("../images/tea-picker4.jpg");
+    background-position: 10%;
+    background-size: cover;
+    height: 55vh;
+    width: 100%;
+}
+
+.header{
+    z-index: 100;
+    margin-top : 2%;
+}
+.logo{
+    position: relative;
+    top : -30%;
+    left: 50%;
+    transform: translateX(-10%);
+}
+
+#option-menu {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    animation: fade 2000ms;
+}
+
+#option-menu .col-md-4 {
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    flex-direction: column; /* Afficher le contenu en colonne */
+    justify-content: center; /* Aligner le contenu verticalement au centre */
+    align-items: center; /* Aligner le contenu horizontalement au centre */
+}
+.image-option {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(55, 99, 95);
+    display: flex; /* Utiliser flexbox pour aligner le contenu */
+    justify-content: center; /* Aligner le contenu horizontalement au centre */
+    align-items: center; /* Aligner le contenu verticalement au centre */
+}
+.image-option img{
+    width: 45%;
+}
+
+footer{
+    margin-top: 50%;
+}

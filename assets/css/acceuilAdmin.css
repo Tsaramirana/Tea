@@ -1,0 +1,31 @@
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/back2.png");
+    background-size: 100%;
+    animation: fade 2s;
+}
+
+.content {
+    width: 100%;
+    height: calc(100vh - 40px); /* Ajustement de la hauteur en tenant compte du header */
+    padding-top: 40px; /* Ajustement pour éviter que le contenu ne soit caché sous le header */
+}
+
+.content-text {
+    text-align: center;
+    margin-top: 15%;
+    color: azure;
+}
+
+.content-text h1 {
+    font-size: 100px;
+    font-weight: 800;
+}
+

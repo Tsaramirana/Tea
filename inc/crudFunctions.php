@@ -281,5 +281,16 @@ function getWeightPerParcel($month1, $year1, $month2, $year2) {
   $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
   return $results;
 }
+function getWeightParcel($month1, $year1, $month2, $year2,$idParcel) {
+  $data=getWeightPerParcel($month1, $year1, $month2, $year2);
+  $result=0;
+  for ($i=0; $i < count($data) ; $i++) { 
+    if ($idParcel==$data[$i] ['parcel']) {
+      $result=$data[$i] ['available'];
+      break;
+    }
+  }
+  return $result;
+}
 
 ?>

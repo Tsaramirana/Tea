@@ -1,0 +1,52 @@
+body{
+    background-image: url("../images/feuilles-automne.jpg");
+    background-size: cover;
+}
+#form{
+    position: absolute;
+    /* border : solid 1px #797878; */
+    width: 70%;
+    height: 75vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    background-color: #ffff;
+}
+#form .col-md-6{
+    border-radius: 25px;
+}
+#form #tea-image{
+    background-image: url("../images/tea-pot2.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+#form .form-horizontal{
+    margin-top: 40%;
+    margin-left: 30%;
+}
+#form .form-horizontal input{
+    background-color: #ffff;
+}
+
+#form .form-horizontal .form-group{
+    margin-top: 7%;
+}
+
+#form .col-md-6 h1{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #d2925e;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.col-sm-8 p{
+    font-weight: 500;
+}
