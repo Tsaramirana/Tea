@@ -35,7 +35,13 @@
         <h1>Tea-rapy</h1>
         <ul>
             <li><a href="acceuilAdmin.html">Accueil</a></li>
-            <li><a href="tea.php">Thé</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thé <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
+                    <li><a href="tea.php">Gestion variétés de thé</a></li> <!-- Ajouter les options du menu déroulant -->
+                    <li><a href="regeneration.php">Régénération</a></li>
+                </ul>
+            </li>
             <li><a href="parcelle.php">Parcelle</a></li>
             <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cueillette <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
