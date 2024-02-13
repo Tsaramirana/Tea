@@ -71,3 +71,11 @@
   .open-btn:hover {
     background-color: #444;
   }
+
+  .dropdown-menu {
+    background-color: #f8f9fa !important; /* Ajouter !important pour s'assurer que cette règle est prioritaire */
+    border: none; /* Supprimer la bordure */
+}
+.dropdown-menu > li > a {
+  color: #416551 !important; /* Définir la couleur du texte pour les options du dropdown */
+}

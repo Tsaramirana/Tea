@@ -31,17 +31,29 @@
 
         <!-- SIDEBAR -->
         <div class="sidebar" id="sidebar">
-            <button class="close-btn" id="closeBtn">&times;</button>
-            <h1>Tea-rapy</h1>
-            <ul>
-                <li><a href="acceuilAdmin.html">Accueil</a></li>
-                <li><a href="tea.php">Thé</a></li>
-                <li><a href="parcelle.php">Parcelle</a></li>
-                <li><a href="cueilleur.php">Cueillette</a></li>
-                <li><a href="depense.php">D&eacute;pense</a></li>
-                <li><a href="#" class="active">Salaire</a></li>
-            </ul>
-        </div>    
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <h1>Tea-rapy</h1>
+        <ul>
+            <li><a href="acceuilAdmin.html">Accueil</a></li>
+            <li><a href="tea.php">Thé</a></li>
+            <li><a href="parcelle.php">Parcelle</a></li>
+            <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cueillette <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
+                    <li><a href="cueilleur.php">Gestion cueillette</a></li> <!-- Ajouter les options du menu déroulant -->
+                    <li><a href="poids_minimal.php">Poids minimal</a></li>
+                </ul>
+            </li>
+            <li><a href="depense.php">Dépense</a></li>
+            <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
+                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Salaire <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
+                    <li><a href="#">Gestion de salaires</a></li> <!-- Ajouter les options du menu déroulant -->
+                    <li><a href="pourcentage.php">Bonus et malus</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
         <!-- SIDEBAR -->
         <div class="row">
             <h1>Configuration des salaires</h1>
@@ -112,5 +124,9 @@
     <script src="../assets/js/sidebar.js"></script> 
     <script src="../assets/js/pagination.js"></script>
     <script src="../assets/js/userInfo.js"></script>
+    <script src="../assets/js/sidebar.js"></script> 
+    <script src="../assets/js/bootstrap.js"></script> 
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
 </body>
 </html>

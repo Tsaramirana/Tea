@@ -38,25 +38,25 @@
             <li><a href="tea.php">Thé</a></li>
             <li><a href="parcelle.php">Parcelle</a></li>
             <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
-                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Cueillette <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cueillette <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
                 <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
-                    <li><a href="#">Gestion cueillette</a></li> <!-- Ajouter les options du menu déroulant -->
+                    <li><a href="cueilleur.php">Gestion cueillette</a></li> <!-- Ajouter les options du menu déroulant -->
                     <li><a href="poids_minimal.php">Poids minimal</a></li>
                 </ul>
             </li>
             <li><a href="depense.php">Dépense</a></li>
             <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salaire <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Salaire <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
                 <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
                     <li><a href="salaire.php">Gestion de salaires</a></li> <!-- Ajouter les options du menu déroulant -->
-                    <li><a href="pourcentage.php">Bonus et malus</a></li>
+                    <li><a href="#">Bonus et malus</a></li>
                 </ul>
             </li>
         </ul>
         </div>
         <!-- SIDEBAR -->
         <div class="row">
-            <h1>Gestion des cueilleurs</h1>
+            <h1>Bonus et Malus</h1>
         </div>
         <div class="row" id="content">
             <!-- FORMULAIRE -->
@@ -65,22 +65,18 @@
                     <div class="form-group">
                         <!-- <label for="inputEmail3" class="col-sm-2 control-label">Email</label> -->
                         <div class="col-sm-8">
-                        <p>Nom</p>
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nom" name="nom">
+                        <p>Montant</p>
+                        <input type="number" class="form-control" id="inputEmail3" placeholder="Montant" name="montant">
                         </div>
                     </div>
                     <div class="form-group">
                         <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
                         <div class="col-sm-8">
-                        <p>Genre</p>
-                        <input type="text" class="form-control" id="inputPassword3" placeholder="Genre" name="genre">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
-                        <div class="col-sm-8">
-                        <p>Date de naissance</p>
-                        <input type="date" class="form-control" id="inputPassword3" placeholder="Date de naissance" name="dtn">
+                        <p>Nature</p>
+                        <select class="form-control" name="status">
+                            <option value="0">Bonus</option>
+                            <option value="1">Malus</option>
+                        </select>                
                         </div>
                     </div>
                     <div class="form-group">
@@ -96,35 +92,18 @@
             <div class="col-md-6" id="table">
                 <table class="table table-condensed">
                     <thead>
-                        <th>Nom</th>
-                        <th>Genre</th>
-                        <th>Date de naissance</th>
+                        <th>Montant</th>
+                        <th>Nature</th>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Nom 1</td>
-                            <td>Genre 1</td>
-                            <td>Date de naissance 1</td>
-                        </tr>
-                            <td>Nom 2</td>
-                            <td>Surface 2</td>
-                            <td>Date de naissance 2</td>
-                        <tr>
-                            <td>Nom 3</td>
-                            <td>Surface 3</td>
-                            <td>Date de naissance 3</td>
+                            <td>1</td>
+                            <td>Malus</td>
                         </tr>
                         <tr>
-                            <td>Nom 4</td>
-                            <td>Surface 4</td>
-                            <td>Date de naissance 4</td>
+                            <td>3</td>
+                            <td>Bonus</td>
                         </tr>
-                        <tr>
-                            <td>Nom 5</td>
-                            <td>Surface 5</td>
-                            <td>Date de naissance 5</td>
-                        </tr>
-                    </tbody>
                 </table>
                 <center><nav><ul class="pagination pagination-lg"></ul></nav></center>
             </div>

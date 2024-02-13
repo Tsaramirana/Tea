@@ -31,17 +31,29 @@
 
         <!-- SIDEBAR -->
         <div class="sidebar" id="sidebar">
-            <button class="close-btn" id="closeBtn">&times;</button>
-            <h1>Tea-rapy</h1>
-            <ul>
-                <li><a href="acceuilAdmin.html">Accueil</a></li>
-                <li><a href="tea.html" class="active">Thé</a></li>
-                <li><a href="tea.html">Parcelle</a></li>
-                <li><a href="tea.html">Cueillette</a></li>
-                <li><a href="tea.html">D&eacute;pense</a></li>
-                <li><a href="tea.html">Salaire</a></li>
-            </ul>
-        </div>    
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <h1>Tea-rapy</h1>
+        <ul>
+            <li><a href="acceuilAdmin.html">Accueil</a></li>
+            <li><a href="#" class="active">Thé</a></li>
+            <li><a href="parcelle.php">Parcelle</a></li>
+            <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cueillette <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
+                    <li><a href="cueilleur.php">Gestion cueillette</a></li> <!-- Ajouter les options du menu déroulant -->
+                    <li><a href="poids_minimal.php">Poids minimal</a></li>
+                </ul>
+            </li>
+            <li><a href="depense.php">Dépense</a></li>
+            <li class="dropdown"> <!-- Ajouter la classe "dropdown" à l'élément parent -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salaire <span class="caret"></span></a> <!-- Ajouter la classe "dropdown-toggle" et les attributs "data-toggle" et "aria-haspopup" -->
+                <ul class="dropdown-menu"> <!-- Ajouter la classe "dropdown-menu" à la liste déroulante -->
+                    <li><a href="salaire.php">Gestion de salaires</a></li> <!-- Ajouter les options du menu déroulant -->
+                    <li><a href="pourcentage.php">Bonus et malus</a></li>
+                </ul>
+            </li>
+        </ul>
+        </div>
         <!-- SIDEBAR -->
         <div class="row">
             <h1>Gestion des variétés de thé</h1>
@@ -54,14 +66,21 @@
                         <!-- <label for="inputEmail3" class="col-sm-2 control-label">Email</label> -->
                         <div class="col-sm-8">
                         <p>Nom</p>
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Nom">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Nom" name="name">
                         </div>
                     </div>
                     <div class="form-group">
                         <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
                         <div class="col-sm-8">
                         <p>Occupation</p>
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Occupation">
+                        <input type="number" class="form-control" id="inputPassword3" placeholder="Occupation" name="occupation">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="inputPassword3" class="col-sm-2 control-label">Password</label> -->
+                        <div class="col-sm-8">
+                        <p>Prix de vente</p>
+                        <input type="number" class="form-control" id="inputPassword3" placeholder="Prix de vente" name="prix_vente">
                         </div>
                     </div>
                     <div class="form-group">
@@ -79,51 +98,43 @@
                     <thead>
                         <th>Nom</th>
                         <th>Occupation</th>
+                        <th>Prix de vente</th>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Variété 1</td>
                             <td>Occupation 1</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Variété 2</td>
                             <td>Occupation 2</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Variété 3</td>
                             <td>Occupation 3</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Variété 4</td>
                             <td>Occupation 4</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Variété 5</td>
                             <td>Occupation 5</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Variété 6</td>
                             <td>Occupation 6</td>
+                            <td>5000</td>
                         </tr>
                         <tr>
                             <td>Variété 7</td>
                             <td>Occupation 7</td>
-                        </tr>
-                        <tr>
-                            <td>Variété 8</td>
-                            <td>Occupation 8</td>
-                        </tr>
-                        <tr>
-                            <td>Variété 9</td>
-                            <td>Occupation 9</td>
-                        </tr>
-                        <tr>
-                            <td>Variété 10</td>
-                            <td>Occupation 10</td>
-                        </tr>
-                        <tr>
-                            <td>Variété 11</td>
-                            <td>Occupation 11</td>
+                            <td>5000</td>
                         </tr>
                     </tbody>
                 </table>
@@ -138,5 +149,10 @@
     <script src="../assets/js/sidebar.js"></script> 
     <script src="../assets/js/pagination.js"></script>
     <script src="../assets/js/userInfo.js"></script>
+    <script src="../assets/js/sidebar.js"></script> 
+    <script src="../assets/js/bootstrap.js"></script> 
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,23 @@
+.month-checkbox {
+    display: inline-block;
+    width:  50px;
+    height:  50px;
+    border-radius:  50%;
+    background-color: #5fb398 !important;
+    text-align: center;
+    line-height:  50px;
+    cursor: pointer;
+    margin:  5px;
+  }
+  
+  /* Add this class to change the background color */
+  .month-checkbox.checked {
+    background-color: #c5c8cb !important;
+    color: rgb(46,  45,  45) !important;
+  }
+  
+  /* Hide the actual checkbox */
+  .month-checkbox input[type="checkbox"] {
+    display: none;
+  }
+  
