@@ -5,8 +5,13 @@
     $status= $_POST['mode'];
     $user= authentication($email, $mdp, $status);
     if ($user !=null) {
+        session_start ();
         $_SESSION ['user'] = $user;
-        header ('Location:AcceuilUser.php');
+        if ($status==0) {
+            header ('Location:AcceuilAdmin.php');
+        }else{
+            header ('Location:AcceuilUser.php');
+        }
     }else {
         header ("Location:formulaire.php?erreur=verifiez vos informations&mode=".$status);
     }
